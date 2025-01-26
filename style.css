@@ -1,0 +1,150 @@
+.navbar{
+    font-family: 'Times New Roman';
+    background-color: rgb(4, 63, 189);
+
+    border-radius: 5px;
+}
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+#h5{
+    margin-left: 30px;
+    font-size: 16px;
+    color: aliceblue;
+}
+nav ul li {
+	display:inline ;
+    margin-right: 30px;
+    top: 0px;
+}
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.conten{
+    margin: auto;
+    padding: auto;
+    color: rgb(240, 248, 255);
+    font-size: 12px;
+   
+}
+body{
+    background-image: url(xiaomi-pad-7-pro-3840x2160-19801.jpg);
+    margin: 0%;
+    padding: 0%;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: blur(20px);
+    z-index: -1;
+}
+#p1{
+    font-size: 20px;
+}
+.hal1{
+    position: relative;
+    padding: 10px;
+    font-family: times new roman;
+}
+.intro{
+    text-align: justify;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.171);
+    border-radius: 20px;
+}
+
+.typewriter{
+    display: inline-block;
+    font-size: 2rem;
+    border-right: 3px solid white; /* Menambahkan garis kursor */
+    white-space: nowrap; /* Agar teks tetap berada dalam satu baris */
+    overflow: hidden; /* Menyembunyikan teks yang tidak ditampilkan */
+    animation: typing 4s steps(40) 1s 1 normal both, blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+    from {
+        width: 0; /* Mulai dari lebar 0 */
+    }
+    to {
+        width:60%; 
+    }
+}
+
+/* Animasi kedip kursor */
+@keyframes blink-caret {
+    50% {
+        border-color: transparent; 
+    }
+    100% {
+        border-color: white;
+    }
+}
+.foto{
+    position: absolute;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 220px;
+    background-color: rgba(143, 44, 236, 0.455);
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 150px;
+    padding-top: 140px;
+    border-radius: 19px;
+}
+img{
+    position:absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+footer{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 10px;
+    background-color:rgb(4, 63, 189);
+    position: absolute;
+    bottom:0;
+}
+   
+
+@media only screen and (max-width: 576px){
+	.conten{
+		max-width: 540px;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.conten{
+		max-width: 720px;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	.conten{
+		max-width: 960;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	.conten{
+		max-width: 1140;
+	}
+}
